@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Whisker Haven</title>
+    <link rel="icon" href="images/logo2.png" width="30">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ <style>
+  html {
+  scroll-padding-top: 80px;
+}
+
+    body {
+      margin: 0;
+      padding-top: 70px;
+    }
+    .navbar {
+      background-color:white; 
+    }
+    .nav-link {
+  
+  font-weight: 500;
+  font-size: 20px;
+  font-family: josefin Sans,sans-serif ;
+}
+.nav-link:hover{
+color: #4b2e05
+}
+.adopt-c:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 221, 0, 0.929);
+  transition: all 0.3s ease;
+
+}
+.card-b:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 25px rgba(255, 229, 57, 0.991);
+  transition:all 0.4 ease;
+}
+.card-s{
+
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+footer a:hover {
+  color: #FFD700 !important;
+  transition: color 0.3s ease;
+}
+</style>
+
+
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  fixed-top " style="display:flex; justify-content:space-between;font-family: 'Tangerine', serif;color: black;">
+    <div class="container">
+     
+      <a class="navbar-brand " style= "font-family: 'Tangerine', serif; 
+        font-size: 48px;"  href="#">Welcome to Whisker Haven !</a>
+
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-house-door fs-5" style="color: #000000;"></i></a></li>
+          <li class="nav-item"><a class="nav-link" href="#breeds">Breeds</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link " href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link " href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+          <a class="nav-link" href="shop.html" title="Merchandise" style="margin-left: 10px;">
+            <i class="bi bi-bag"></i>
+          </a>
+        </li>
+          
+
+          
+          <li ><img src="images/paw.jpeg" style="margin-left: 30px;margin-top:10px;" height="24" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></img>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel" style="font-size: xx-large;">Support Whisker Haven</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body " style="font-family:josefin Sans,sans-serif ;font-weight:500;align-items: center;">
+    <p style="font-size:16px; color:#555;">
+      Every rupee helps us feed, treat, and shelter rescued cats.  
+      You can donate using UPI, bank transfer, or PayPal. 💛
+    </p>
+    <div class="text-center">
+      <img src="images/qr.jpg" alt="Donation QR" style="width:150px; height:auto;" class="img-fluid rounded shadow mb-3" >
+      <p><b>UPI ID:</b> whiskerhaven@upi</p>
+    </div>
+    <form>
+      <div class="mb-3">
+        <label for="donorName" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="donorName" placeholder="Enter your name">
+      </div>
+      <div class="mb-3">
+        <label for="donorAmount" class="form-label">Donation Amount (₹)</label>
+        <input type="number" class="form-control" id="donorAmount" placeholder="500">
+      </div>
+      <button type="submit" class="btn btn-success w-66">Proceed to Donate 💰</button>
+    </form>
+
+    
+  </div>
+  <div style="height:100px; background-image: url(images/black-paw2.png);background-repeat: no-repeat;"></div>
+</div>
+<div class="position-relative">
+  <img src="images/banner4.JPG" width="100%" height="750px" class="img-fluid" alt="Banner Image">
+
+  
+  <div class="position-absolute top-50 start-0 translate-middle-y text-white"
+       style="background: rgba(0,0,0,0.5); padding: 30px 50px; border-radius: 10px; margin-left: 80px; max-width: 500px;">
+    <h1 style="font-family: 'Tangerine', serif; font-size: 64px;">Whisker Haven — Where Every Cat Finds a Home</h1>
+    <p style="font-family: 'Josefin Sans', sans-serif; font-size: 18px;">
+      From rescued kittens to affectionate adults, every cat here is waiting for a forever home.<br>
+Adopt with love. Care with heart.
+    </p>
+  </div>
+</div>
+<div class="container-fluid" style="background-color: #000000;height:500px;padding-top: 80px;">
+  <div class="container text-center" style="width: 600px;">
+  <div class="row ">
+    <div class="col" style="padding-left: 7px;">
+      <img src="images/intro.jpeg">
+    </div>
+    <div class="col" style="text-align: center;padding-top: 50px;color: white;width:100px;">
+      <h3>“Why Cats Steal Hearts”</h3>
+      <p>Cats are graceful, independent, and endlessly curious. From their playful purrs to quiet companionship, they bring warmth and calm to any home. Every cat has a personality waiting to be discovered — loyal, loving, and full of surprises.</p>
+      
+
+
+    </div>
+    
+  </div>
+</div>
+</div>
+
+
+
+<div id=breeds class="container-fluid" style="height: 140px;background-color: black;color: beige;text-align: center;font-family:'Josefin Sans', sans-serif ;padding-top: 15px;">
+  <hr>
+  <h2  >Select the Kitten for your home</h2>
+  <p>-- BREEDS --</p>
+  <hr>
+  
+  
+</div>
+<div class="container-fluid py-5" style="background-color: black;padding-top: 65px;">
+  <div class="container" style="padding-top: 65px;">
+    <div class="row g-4 justify-content-center">
+      
+      
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-b text-center" style="background-color: #1a1a1a; border: none; box-shadow: 0 0 15px rgba(255, 217, 0, 0.511); border-radius: 15px; transition: 0.4s;">
+          <img src="images/persian2.png" class="card-img-top" style="border-radius: 15px 15px 0 0; height: 230px; object-fit: cover;">
+          <div class="card-body text-white">
+            <h5 style="color: #FFD700;">Persian Cat</h5>
+            <p>Graceful and affectionate, perfect for calm households.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-b text-center" style="background-color: #1a1a1a; border: none; box-shadow: 0 0 15px rgba(255, 217, 0, 0.591); border-radius: 15px; transition: 0.4s;">
+          <img src="images/maine.webp" class="card-img-top" style="border-radius: 15px 15px 0 0; height: 230px; object-fit: cover;">
+          <div class="card-body text-white">
+            <h5 style="color: #FFD700;">Maine Coon</h5>
+            <p>Friendly, social, and majestic — a true gentle giant.</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-b text-center" style="background-color: #1a1a1a; border: none; box-shadow: 0 0 15px rgba(255, 217, 0, 0.591); border-radius: 15px; transition: 0.4s;">
+          <img src="images/siamesee.png" class="card-img-top" style="border-radius: 15px 15px 0 0; height: 230px; object-fit: cover;">
+          <div class="card-body text-white">
+            <h5 style="color: #FFD700;">Siamese Cat</h5>
+            <p>Elegant, intelligent, and loves companionship.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-b text-center" style="background-color: #1a1a1a; border: none; box-shadow: 0 0 15px rgba(255, 217, 0, 0.591); border-radius: 15px; transition: 0.4s;">
+          <img src="images/bengal.png" class="card-img-top" style="border-radius: 15px 15px 0 0; height: 230px; object-fit: cover;">
+          <div class="card-body text-white">
+            <h5 style="color: #FFD700;">Bengal Cat</h5>
+            <p>Active, playful, and loves exploring — a mini leopard!</p>
+          </div>
+        </div>
+      </div>
+            
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-b text-center" style="background-color: #1a1a1a; border: none; border-radius: 15px; box-shadow: 0 0 15px rgba(255, 217, 0, 0.591); transition: 0.4s;">
+          <img src="images/bombay-cat.png" class="card-img-top" alt="Bombay Cat" style="border-radius: 15px 15px 0 0; height: 230px; object-fit: cover;">
+          <div class="card-body text-white">
+            <h5 style="color: #FFD700;">Bombay Cat</h5>
+            <p>Sleek and mysterious, the Bombay is a mini panther with a loving heart.</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-b text-center" style="background-color: #1a1a1a; border: none; border-radius: 15px; box-shadow: 0 0 15px rgba(255, 217, 0, 0.591); transition: 0.4s;">
+          <img src="images/himalayan.png" class="card-img-top" alt="Himalayan Cat" style="border-radius: 15px 15px 0 0; height: 230px; object-fit: cover;">
+          <div class="card-body text-white">
+            <h5 style="color: #FFD700;">Himalayan Cat</h5>
+            <p>Fluffy and serene, Himalayans are affectionate lap cats with royal grace.</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-b text-center" style="background-color: #1a1a1a; border: none; border-radius: 15px; box-shadow: 0 0 15px rgba(255, 217, 0, 0.591); transition: 0.4s;">
+          <img src="images/short-hair.webp" class="card-img-top" alt="British Shorthair" style="border-radius: 15px 15px 0 0; height: 230px; object-fit: cover;">
+          <div class="card-body text-white">
+            <h5 style="color: #FFD700;">British Shorthair</h5>
+            <p>Chubby-cheeked and calm, they’re the perfect blend of class and cuteness.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-3 col-sm-6">
+        <div class="card card-b text-center" style="background-color: #1a1a1a; border: none; border-radius: 15px; box-shadow: 0 0 15px rgba(255, 217, 0, 0.591); transition: 0.4s;">
+          <img src="images/exotic-short-hair.png" class="card-img-top" alt="Exotic Shorthair" style="border-radius: 15px 15px 0 0; height: 230px; object-fit: cover;">
+          <div class="card-body text-white">
+            <h5 style="color: #FFD700;">Exotic Shorthair</h5>
+            <p>Soft, sweet, and low-maintenance — the Persian’s easygoing cousin.</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<div  style="height:220px;background-color: rgb(0, 0, 0);">
+  <div class="container" style="padding-top: 70px;">
+    <div class="row row-cols-md-3">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card adopt-c" style="text-align: center;background-color: rgb(255, 255, 12);box-shadow: 
+  0 6px 15px rgba(0, 0, 0, 0.6),
+  0 0 25px rgba(255, 221, 0, 0.925);" >
+      <div class="card-body">
+        <h5 class="card-title" style="font-family:'Josefin Sans', sans-serif ;font-size: x-large;" >Pure Bloodline</h5>
+        <p class="card-text" style="font-size:large;" >Authentic and Microchipped kitten</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card adopt-c" style="text-align: center;background-color: rgb(255, 255, 12);box-shadow: 
+  0 6px 15px rgba(0, 0, 0, 0.6),
+  0 0 25px rgba(255, 221, 0, 0.779);">
+      <div class="card-body" >
+        <h5 class="card-title" style="font-family:'Josefin Sans', sans-serif ;font-size: x-large;" >Vaccinated Kittens</h5>
+        <p class="card-text" style="font-size:large;" >Physically and Emotionally Healthy feline</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card adopt-c" style="text-align: center;background-color: rgb(255, 255, 12);box-shadow: 
+  0 6px 15px rgba(0, 0, 0, 0.6),
+  0 0 25px rgba(255, 221, 0, 0.9);">
+      <div class="card-body">
+        <h5 class="card-title" style="font-family:'Josefin Sans', sans-serif ;font-size: x-large;">Expert Team</h5>
+        <p class="card-text" style="font-size:large;"  >7 years of experience in handling cattery</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  
+</div>
+<div id=services class="container-fluid" style="background-color: black;color: beige;text-align: center;font-family:'Josefin Sans', sans-serif ;padding-top: 40px;padding-bottom: 80px;" >
+  <hr>
+  <h3>Destination for Feline Lovers</h3>
+  <h2>-- OUR SERVICES --</h2>
+
+  <hr>
+</div>
+
+<div class="container-fluid" style="background-color: #FFD700;padding-top: 65px;padding-bottom: 65px;;">
+<div class="container">
+  <div class="row g-4 justify-content-center">
+
+      
+      <div class="col-md-5 col-sm-10">
+        <div class="card card-s h-100 text-center" style="background-color: white; border: none; border-radius: 15px; box-shadow: 0 20 20px rgba(0, 0, 0, 0.546); transition: 0.4s;">
+          <img src="images/Cat-grooming.png" class="card-img-top" alt="Cat Grooming" style="border-radius: 15px 15px 0 0; height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 style="color: #1a1a1a;">Grooming</h5>
+            <p style="color: #555;">Keep your feline clean and fabulous with our expert grooming services.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-5 col-sm-10">
+        <div class="card card-s h-100 text-center" style="background-color: white; border: none; border-radius: 15px; box-shadow:0 20 20px rgba(0, 0, 0, 0.546); transition: 0.4s;">
+          <img src="images/Cat-Food.png" class="card-img-top" alt="Cat Food" style="border-radius: 15px 15px 0 0; height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 style="color: #1a1a1a;">Cat Food</h5>
+            <p style="color: #555;">Nutritious meals for every breed — tasty, healthy, and vet-approved.</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col-md-5 col-sm-10">
+        <div class="card card-s h-100 text-center" style="background-color: white; border: none; border-radius: 15px; box-shadow: 0 20 20px rgba(0, 0, 0, 0.546); transition: 0.4s;">
+          <img src="images/Pet-Transport.png" class="card-img-top" alt="Cat Transport" style="border-radius: 15px 15px 0 0; height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 style="color: #1a1a1a;">Transport</h5>
+            <p style="color: #555;">Safe and comfortable travel options for your furry companions.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-5 col-sm-10">
+        <div class="card card-s h-100 text-center" style="background-color: white; border: none; border-radius: 15px; box-shadow: 0 20 20px rgba(0, 0, 0, 0.744); transition: 0.4s;">
+          <img src="images/adoption.png" class="card-img-top" alt="Cat Adoption" style="border-radius: 15px 15px 0 0; height: 250px; object-fit: cover;">
+          <div class="card-body">
+            <h5 style="color: #1a1a1a;"> Paid Adoption</h5>
+            <p style="color: #555;">Find your perfect feline friend and give them a forever home.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+<div class="container-fluid" style="background-color: #000000;color: #ffffff;padding-top: 20px;padding-bottom: 20px;">
+  <div id="factCarousel" class="carousel slide text-center" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active"><p>😺 A cat can jump up to 6 times its length in one leap!</p></div>
+    <div class="carousel-item"><p>🐈‍⬛ Cats sleep 70% of their lives!</p></div>
+    <div class="carousel-item"><p>🐾 Every cat’s nose print is unique like a fingerprint!</p></div>
+  </div>
+</div>
+
+</div>
+
+  <div id=about class="position-relative">
+  <img src="images/about-background.jpg" width="100%" height="750px" class="img-fluid" alt="Banner Image">
+  <div class="position-absolute top-50 start-0 translate-middle-y text-white"
+       style="background: rgba(0,0,0,0.5); padding: 30px 50px; border-radius: 10px; margin-left: 80px; max-width: 560px;">
+    <h1 style="font-family: 'Tangerine', serif; font-size: 64px;">About Us</h1>
+    <p style="font-family: 'Josefin Sans', sans-serif; font-size: 18px;">
+        At <strong>Whisker Haven</strong>, we are passionate about creating loving homes for every cat. 
+        From adoption to welfare support, our mission is to connect caring people with furry companions 
+        who deserve warmth, comfort, and endless affection.
+      </p>
+  </div>
+  </div>
+  <section id="why-choose-us" class="py-5" style="background-color: #f8f9fa;font-family: 'Josefin Sans', sans-serif;">
+  <div class="container text-center">
+    <h1 class="mb-4">Why Choose Us?</h1>
+    <p class="mb-5 text-muted">We’re more than just a cat adoption center — we’re a family that truly cares for every whisker and paw.</p>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      
+     
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"> Fully Vaccinated Cats</h5>
+            <p class="card-text text-muted">Every cat is health-checked, dewormed, and fully vaccinated before adoption. Your safety and your pet’s health come first.</p>
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"> Well Socialized</h5>
+            <p class="card-text text-muted">Our cats are raised in loving foster homes, so they’re already comfortable with humans, sounds, and other pets.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"> Affordable Adoption Fees</h5>
+            <p class="card-text text-muted">We believe every cat deserves a home — our adoption fees only cover vaccination and care costs, nothing extra.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"> Transparent Process</h5>
+            <p class="card-text text-muted">No hidden rules or unclear conditions. You’ll know everything about your future pet — their health, habits, and history.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"> Expert Veterinary Support</h5>
+            <p class="card-text text-muted">Our partnered vets ensure each cat’s well-being and guide new adopters with medical advice and regular checkups.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"> No Emotional Pressure</h5>
+            <p class="card-text text-muted">We respect your decision. You can spend time with our cats before deciding — no rush, no guilt.</p>
+          </div>
+        </div>
+      </div>
+
+     
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"> Easy Adoption Process</h5>
+            <p class="card-text text-muted">Our paperwork is simple, quick, and online-friendly — so you can focus more on cuddles than forms.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"> Lifetime Support</h5>
+            <p class="card-text text-muted">Need help after adoption? We’re just a message away for tips, advice, and friendly follow-ups.</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title"> Ethical & Humane Care</h5>
+            <p class="card-text text-muted">We never cage cats unnecessarily. Every pet is treated with kindness, love, and respect — just like family.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="container-fluid">
+
+</div>
+
+<div id="team" class="container-fluid" style="background-color: #ffffff;padding-bottom: 30px;">
+    <div class="container">
+        
+        <h1 class="text-center " style="padding-top: 30px;padding-bottom:30px ;font-family: 'Josefin Sans'serif;">Meet Our Team</h1>
+        
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100 border-0" style="max-width: 14rem;margin: auto;">
+      <img src="images/person2.jpeg" class="rounded-circle" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Krithika</h5>
+        <p class="card-text text-center">Founder and Cat behaviour Specialist</p>
+        <hr>
+      <p class="small mb-1 text-center">+91 98765 43210</p>
+      <p class="small text-center">krithika@whiskerhaven.com</p>
+
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-0" style="max-width: 14rem;margin: auto;">
+      <img src="images/person1.jpeg" class="rounded-circle" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Rahul Raj</h5>
+        <p class="card-text text-center">Veterinarian</p>
+         <hr>
+      <p class="small mb-1 text-center">+91 98765 43210</p>
+      <p class="small text-center">rahulraj@whiskerhaven.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100 border-0" style="max-width: 14rem;margin: auto;">
+      <img src="images/person3.jpeg" class="rounded-circle" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-center">Nisha Patel</h5>
+        <p class="card-text text-center">Adoption Coordinator</p>
+         <hr>
+      <p class="small mb-1 text-center">+91 98765 43210</p>
+      <p class="small text-center">nishapatel@whiskerhaven.com</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+        
+    </div>
+</div>
+<section id="testimonials" class="py-5" style="background-color: #FDF6F0;">
+  <div class="container text-center">
+    <h2 class="mb-5"> What Our Adopters Say</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <blockquote class="blockquote">
+            <p>"Adopting Muffin changed my life! The team made everything so easy."</p>
+            <footer class="blockquote-footer">Ananya, Trivandrum</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>"Healthy, vaccinated, and super friendly cats — loved the experience!"</p>
+            <footer class="blockquote-footer">Rahul, Kochi</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item">
+          <blockquote class="blockquote">
+            <p>"They truly care about every cat. I’ll recommend them to everyone!"</p>
+            <footer class="blockquote-footer">Meera, Calicut</footer>
+          </blockquote>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+    </div>
+  </div>
+</section>
+
+
+
+  </div>
+  <div id=contact class="container-fluid" style="background-color: black;color: white;">
+    <div class="container" style="padding-top: 40px;padding-bottom: 40px;text-align: center;">
+      <h1>Lets get social!</h1>
+      <h3>Follow Us On</h3>
+      <div class="mt-3">
+            <a href="#" class="me-3 text-white" style="font-size: 2rem;"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-3 text-white" style="font-size: 2rem; "><i class="bi bi-instagram" ></i></a>
+            <a href="#" class="text-white" style="font-size: 2rem; "><i class="bi bi-youtube"></i></a>
+          </div>
+    </div>
+  </div>
+
+  
+<div  class="container-fluid py-5" style="background-color: black; color: white;">
+  <div class="container">
+    <h2 class="text-center mb-4" style="color: #FFD700; font-weight: 600;">Get in Touch</h2>
+    <p class="text-center mb-5" style="color: #ccc;">We’d love to hear from you! Whether it’s about adoption, grooming, or cat care — reach out anytime.</p>
+
+    <div class="row justify-content-center">
+      
+      <div class="col-md-5 mb-4">
+        <div class="p-4 rounded" style="background-color: #1a1a1a; box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);">
+          <h5 style="color: #FFD700;">Contact Information</h5>
+          <p><i class="bi bi-geo-alt-fill" style="color: #FFD700;"></i> 123 Cat Street, Kochi, Kerala</p>
+          <p><i class="bi bi-telephone-fill" style="color: #FFD700;"></i> +91 98765 43210</p>
+          <p><i class="bi bi-envelope-fill" style="color: #FFD700;"></i> contact@purrfectcattery.com</p>
+          <div class="mt-3">
+            <a href="#" class="me-3 text-white"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="me-3 text-white"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-5">
+        <div class="p-4 rounded" style="background-color: #1a1a1a; box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required style="background-color: #111; color: white; border: 1px solid #FFD700;">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required style="background-color: #111; color: white; border: 1px solid #FFD700;">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Message" required style="background-color: #111; color: white; border: 1px solid #FFD700;"></textarea>
+            </div>
+            <button type="submit" class="btn w-100" style="background-color: #FFD700; color: black; font-weight: 600; border-radius: 8px;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid py-5" style="background-color: #000000; background-image: url(images\paw5.png); color: white;">
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-4 border-top" style="border-color: rgba(255, 215, 0, 0.3) !important;">
+
+      
+      <div class="col mb-3">
+        <a href="#" class="d-flex align-items-center mb-3 text-decoration-none">
+          <img src="images/logo2.png" alt="Logo" width="50" height="50" style="border-radius: 8px;">
+        </a>
+        <p class="text-light mb-0" style="font-size: 14px;">© 2025 Whisker Haven</p>
+      </div>
+
+      <div class="col mb-3"></div>
+
+     
+      <div class="col mb-3">
+        <h5 style="color: #FFD700; font-size: 18px; margin-bottom: 15px;">Quick Links</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Our Breeds</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Services</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Gallery</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="col mb-3">
+        <h5 style="color: #FFD700; font-size: 18px; margin-bottom: 15px;">Services</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Grooming</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Cat Food</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Transport</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Paid Adoption</a></li>
+        </ul>
+      </div>
+
+      
+      <div class="col mb-3">
+        <h5 style="color: #FFD700; font-size: 18px; margin-bottom: 15px;">Connect</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Contact Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Instagram</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Facebook</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light" style="font-size: 14px;">Email</a></li>
+        </ul>
+      </div>
+
+    </footer>
+  </div>
+</div>
+<footer class="text-center text-light py-4" style="background-color:#000000;color: #d8d800;">
+  <p>“Saving one cat won’t change the world, but it will change the world for that one cat.” 🐾</p>
+  <small>© 2025 Whisker Haven | All Rights Reserved</small>
+</footer>
+
+
+<style>
+
+</style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>  
+</body>
+</html>
